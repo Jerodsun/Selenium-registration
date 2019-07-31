@@ -4,3 +4,5 @@ secrets.py
 # Different browsers/versions/kernels
 # https://sites.google.com/a/chromium.org/chromedriver/downloads
 chromedriver*
+
+*.pyc
