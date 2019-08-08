@@ -45,3 +45,13 @@ submit_button = driver.find_element_by_id("id____UID6")
 submit_button.click()
 
 # Assuming we already did the initial registration things and now are in "Add or Drop Classes"
+
+id_list = ['crn_id1', 'crn_id2', 'crn_id3', 'crn_id4', 'crn_id5']
+class_list = ['12345','12345','12345','12345','12345']
+
+
+for idx in range(len(id_list)): 
+    elem = driver.find_element_by_id(id_list[idx])
+    elem.send_keys(class_list[idx])
+
+# Didn't catch the id for "Submit Changes"... I think it might be id____UID4
