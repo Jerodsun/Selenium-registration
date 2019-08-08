@@ -6,3 +6,5 @@ secrets.py
 chromedriver*
 
 *.pyc
+__pycache__
+# Is it standard to include the top or bottom one?
