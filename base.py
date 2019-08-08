@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 
 import time
 
-from secrets import netid, password
+from secrets import netid, password, class_list
 
 start_url = "https://myaccess.georgetown.edu/pls/bninbp/twbkwbis.P_WWWLogin"
 term = "Fall 2019"
@@ -47,11 +47,16 @@ submit_button.click()
 # Assuming we already did the initial registration things and now are in "Add or Drop Classes"
 
 id_list = ['crn_id1', 'crn_id2', 'crn_id3', 'crn_id4', 'crn_id5']
-class_list = ['12345','12345','12345','12345','12345']
+
+try:
+    class_list
+except NameError:
+    class_list = ['12345','12345','12345','12345','12345']
 
 
 for idx in range(len(id_list)): 
     elem = driver.find_element_by_id(id_list[idx])
     elem.send_keys(class_list[idx])
 
-# Didn't catch the id for "Submit Changes"... I think it might be id____UID4
+# Didn't catch the id for "Submit Changes" in my rush to register... I think it might be id____UID4
+# Haven't tested id_list.
