@@ -1,7 +1,13 @@
 # Selenium-registration
 
-QA Automation knowledge into practice.
+Putting Automation knowledge into practice.
 
-### Create a secrets.py file
 
-### Download and put on root appropiate version https://sites.google.com/a/chromium.org/chromedriver/downloads
+## Instructions:
+### Create a `secrets.py` file
+required variables:
+- netid
+- password
+
+### Download chromedriver
+Put on root the appropriate version https://sites.google.com/a/chromium.org/chromedriver/downloads
